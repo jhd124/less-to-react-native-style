@@ -1,0 +1,76 @@
+//-------- colors -------------
+@white: #FBFAF7;
+@black-light: #575a5c;
+@black: #32393C;
+@text-grey: #8d8d8d;
+@dark-grey: #565A5C;
+@light-grey: #E8E8E8;
+@grey: #9CA299;
+@red: #ff595e;
+@salmon: #FFAA91;
+@yellow: #FFB400;
+@blue: #0490D6;
+@green :#007A87;
+@brown : #93551F;
+@purple: #7B0051;
+@cyan: #00D1C1;
+@botticelli-blue: #c8e2e5;
+@sky-blue: #64CDEF;
+@orange: #FC642D;
+@semitransparent-black: rgba(0, 0, 0, 0.5);
+//-------- font weight -------------
+@thin: 100;
+@ultraThin: 200;
+@light: 300;
+@regular: 400;
+@medium: 500;
+@semiBold: 600;
+@bold: 700;
+@heavy: 800;
+//------------z-index-------------------
+@top: 10000; // 最高
+@overlay: 9000;
+@persistentBlock: 8000; // fixed 元素
+@mask: 2000; // card 上面的mask，用于显示帖子下架
+@formId: 1000;
+//------------ styles to be extended -----------
+.absolute-fill() {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.flex-row() {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-center() {
+    .flex-row();
+    align-items: center;
+}
+
+.double-center() {
+    align-items: center;
+    justify-content: center;
+}
+
+.nowrap() {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card(@borderRadius, @padding) {
+    &:not(:first-child) {
+        margin-top: 0;
+    }
+    background-color: #FFF;
+    border-radius: @borderRadius;
+    padding: @padding;
+    box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.19);
+    margin: 30rpx 0;
+}

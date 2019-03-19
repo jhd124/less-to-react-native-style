@@ -1,0 +1,27 @@
+module.exports = {
+    sizeValues: [
+        "width",
+        "height",
+        "borderRadius",
+        "borderWidth",
+        "borderTopWidth",
+        "borderLeftWidth",
+        "borderRightWidth",
+        "borderLeftWidth",
+        "top",
+        "left",
+        "right",
+        "bottom",
+        "margin",
+        "marginTop",
+        "marginBottom",
+        "marginLeft",
+        "marginRight",
+        "padding",
+        "paddingTop",
+        "paddingBottom",
+        "paddingLeft",
+        "paddingRight",
+        "fontSize",
+    ]
+}
