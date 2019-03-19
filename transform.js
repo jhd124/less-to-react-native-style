@@ -27,7 +27,10 @@ rl.on("close", () => {
                 const key = path.node.key.name;
                 if (config.sizeValues.includes(key)) {
                     const value = path.node.value.value;
-                    path.node.value = types.callExpression(types.identifier("size"), [types.numericLiteral(value)])
+                    if (value) {
+                        if (typeof value === "number")
+                            path.node.value = types.callExpression(types.identifier("size"), [types.numericLiteral(value)])
+                    }
                 }
             }
         }

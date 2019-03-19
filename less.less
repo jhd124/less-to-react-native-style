@@ -1,111 +1,93 @@
 @import "./common.less";
-.reservation {
-    width: 100%;
-}
-.request-info {
-    .flex-row();
-    .card(10rpx, 20rpx 20rpx 26rpx 28rpx);
-    margin: 20rpx 30rpx 40rpx 30rpx;
-    align-items: center;
-}
-.reservation-form {
-    .card(8rpx, 13rpx 42rpx 75rpx 42rpx);
-    margin: 40rpx 30rpx;
-}
-.section-container {
-    .flex-row-center();
-    padding: 37rpx 30rpx;
-    font-size: 32rpx;
-    border-bottom: 1rpx solid #EEEEEE;
-    color: #333333;
-}
-.title {
-    font-weight: bold;
-}
-.content-input {
-    flex: 1;
-    text-align: right;
-    color: #666666;
-}
-.gender-selector {
-    .flex-row-center();
-    color: #666666;
-}
-.status {
-    margin-right: 10rpx;
-    margin-left: 23rpx;
-    height: 31rpx;
-    width: 31rpx;
-    border-radius: 50%;
-    border: 1rpx solid #DADADA;
-}
-.selected {
-    .double-center();
-    border: 1rpx solid @yellow;
-}
-.inner-circle {
-    height: 15rpx;
-    width: 15rpx;
-    border-radius: 50%;
-    background-color: @yellow;
-}
-.date-picker-container {
-    .absolute-fill();
-}
-.date-picker {
-    .flex-row-center();
-    .absolute-fill();
-    flex: 1;
-    justify-content: flex-end;
-    color: #666666;
-    margin-right: 30rpx;
 
-}
-.right-arrow {
-    margin-left: 12rpx;
-    font-size: 25rpx;
-    color: #D9D9D9;
-}
-.non-date {
-    color: #999999;
-}
-.picker-container {
-    padding: 50rpx 30rpx;
-}
-.direct-contact {
-    .flex-row-center();
-    margin-top: 41rpx;
-    margin-left: 30rpx;
-    color: #999999;
-    font-size: 28rpx;
-}
-.status {
-    margin-right: 17rpx;
-    height: 35rpx;
-    width: 37rpx;
-    border-radius: 10rpx;
-    border: 2rpx solid #979797;
-}
-i {
-    .flex-row();
-    .double-center();
-    margin-right: 17rpx;
-    height: 35rpx;
-    width: 37rpx;
-    border-radius: 10rpx;
-    background-color: @yellow;
-    color: #fff;
-    font-size: 20rpx;
-}
-.submit-btn {
-    .double-center();
-    margin: 40rpx 58rpx;
-    height: 80rpx;
-    border-radius: 8rpx;
-    color: #fff;
-    background-color: #DCDADA;
-    font-size: 36rpx;
-}
-.has-all {
-    background-color: @yellow;
-}
+    .content-wrapper {
+        position: absolute;
+        width: 100%;
+        align-items: center;
+    }
+
+    .appointment-card {
+        // margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .buttons-container {
+        width: 100%;
+        .flex-row();
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 0 80rpx;
+        margin-top: 70rpx;
+    }
+
+    .button {
+        flex: 1;
+        align-items: center;
+        color: #666666;
+        font-size: 28rpx;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        align-items: center;
+        margin-top: 200rpx;
+    }
+
+    .icon-container {
+        width: 80rpx;
+        height: 80rpx;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+        margin-bottom: 20rpx;
+        .double-center();
+
+    }
+            .button-icon {
+                width: 38rpx;
+                height: 38rpx;
+            }
+
+    .mutation-btn {
+        width: 80rpx !important;
+        height: 80rpx !important;
+    }
+
+    .backToHome {
+        position: absolute;
+        bottom: -110rpx;
+        width: 100%;
+        color: #999999;
+        font-size: 30rpx;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    @skyblue: #3B99FC;
+    .tip {
+        display: inline-block;
+        white-space: nowrap;
+        color: white;
+        font-size: 26rpx;
+
+        padding: 15rpx 26rpx;
+        border-radius: 10rpx;
+        margin-bottom: 22rpx;
+        background-color: @skyblue;
+
+    }
+            .foot {
+                position: absolute;
+                bottom: -8rpx;
+                left: 0;
+                right: 0;
+    
+                width: 20rpx;
+                height: 20rpx;
+    
+                // margin: 0 auto;
+                background-color: @skyblue;
+    
+                transform: rotate(45deg);
+            }
