@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "runStyle": "lessc ./less.less|node ./cssToRNC.js|node ./transform.js>styles.js"
+    "runStyle": "lessc ./less.less|node ./cssToRNC.js|node ./transform.js>styles.js",
+    "logStyle": "lessc ./less.less|node ./cssToRNC.js|node ./transform.js"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
